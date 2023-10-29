@@ -11,18 +11,7 @@ console.log(sentence("salam js dersine xos gelmisiz"))
 
 
 
-const removeCharacterFromString =(word,letter)=>{
-   for (let i=0; i<word.length;i++){
-          if(word[i]===letter){
-            word=word.split(word[i])
-            let result=""
-            for (let key of word){
-                result+=key
-            }
-            return result
-          }
-   }
-}
+const removeCharacterFromString =(word,letter)=>word.replace(letter,"")
 console.log(removeCharacterFromString("Alion","A"));
 
 //4. verify gmail address. (gmail addressleri sonu @gmail.com ile bitmelidir,
